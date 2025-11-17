@@ -30,7 +30,7 @@ class ApiService {
     return res.statusCode == 200;
   }
 
-  // GET appointments
+  // GET appointments (USER’A ÖZEL)
   static Future<List<dynamic>> getAppointments(int userId) async {
     final res = await http.get(Uri.parse("$baseUrl/Randevu/$userId"));
     if (res.statusCode == 200) return jsonDecode(res.body);
@@ -43,6 +43,16 @@ class ApiService {
       Uri.parse("$baseUrl/Randevu"),
       headers: {"Content-Type": "application/json"},
       body: jsonEncode(appointment),
+    );
+    return res.statusCode == 200;
+  }
+
+  // UPDATE appointment
+  static Future<bool> updateAppointment(int id, Map<String, dynamic> data) async {
+    final res = await http.put(
+      Uri.parse("$baseUrl/Randevu/$id"),
+      headers: {"Content-Type": "application/json"},
+      body: jsonEncode(data),
     );
     return res.statusCode == 200;
   }
