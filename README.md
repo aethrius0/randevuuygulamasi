@@ -25,7 +25,9 @@ Kayıt olup giriş yaptıktan sonra karşımıza bir Türkiye haritası geliyor.
 #### Randevular Kısmı
 Randevular sekmesine geldiğimizde karşımıza basit bir randevu oluşturma kısmı geliyor. Randevu oluştururken ilk başta araç plakası girilir, devamında arabaya yapılacak hizmetin türü seçilir. Ardından tarih ve saat seçildikten sonra "Randevu Al" butonuna basılır ve randevu başarıyla oluşturulur. Ayrıca oluşturduğumuz randevunun sağında bulunan "Düzenle" ve "Sil" butonlarını kullanarak randevuyu düzenleyebilir veya silebiliriz.
 
-<img width="800" alt="Randevular Sayfası" src="https://github.com/user-attachments/assets/1fc8a4f8-7398-4d22-b78e-528d34de242d" />
+<img width="448" height="895" alt="image" src="https://github.com/user-attachments/assets/2182c2f0-5147-4d24-8439-0761b1e21b04" /> <img width="446" height="898" alt="image" src="https://github.com/user-attachments/assets/0eec14d7-af3f-43f0-8431-dd8fddc6b5b5" />
+
+
 
 #### Profil Kısmı
 Profil kısmına geldiğimizde önümüze basit bir ad-soyad, e-posta ve telefon numarası bilgilerinin görüleceği kısım karşımıza çıkıyor. Sağ üstte başta da dediğimiz gibi "Çıkış Yap" butonu ortaya çıkıyor. Butona basarak çıkış yapabilirsiniz.
