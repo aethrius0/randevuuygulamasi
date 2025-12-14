@@ -1,4 +1,4 @@
-# AutoWash - Randevu & Rezervasyon Sistemi
+# Self CarWash - Randevu & Rezervasyon Sistemi
 
 Bu proje, araç yıkama randevu sistemini hem web hem de mobil platformda yönetmek amacıyla geliştirilmiştir. Kullanıcılar kayıt olabilir, giriş yapabilir ve uygun tarih/saat seçerek randevu oluşturabilir.
 
