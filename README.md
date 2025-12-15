@@ -20,19 +20,20 @@ Kayıt olmak istediğiniz takdirde "Kayıt ol" butonuna basarak ad, soyad, e-pos
 
 
 #### Ana Sayfa Kısmı
-Kayıt olup giriş yaptıktan sonra karşımıza bir Türkiye haritası geliyor. Bu harita üzerinden randevu almak istediğiniz bayiyi seçebilme imkanı sunulur. Alt butonlar sayesinde randevular ve profil sayfanıza geçiş yapabilirsiniz.
+Kayıt olup giriş yaptıktan sonra karşımıza kullanıcı dostu, canlı bir panel geliyor. Tüm bayileri kaydırarak görebiliyor, üstüne tıklayarak çıkan pop-up'ta randevu sekmesine ayrı girmeden seçtiğimiz bayiden randevu alabiliyoruz. 
+Her bayinin puan ve uzaklık göstergesi bulunmaktadır. En alt kısımda da toplam randevu sayınızın ve en yakın randevunuzun detayları birlikte gözüktüğü küçük bir panel bulunmaktadır. 
 
 <img width="400"  alt="Ana Sayfa" src="https://github.com/user-attachments/assets/31a685a8-4271-42fd-8092-804d7c400de3" />
 
 
 #### Randevular Kısmı
-Randevular sekmesine geldiğimizde karşımıza basit bir randevu oluşturma kısmı geliyor. Randevu oluştururken ilk başta araç plakası girilir, devamında arabaya yapılacak hizmetin türü seçilir. Ardından tarih ve saat seçildikten sonra "Randevu Al" butonuna basılır ve randevu başarıyla oluşturulur. Ayrıca oluşturduğumuz randevunun sağında bulunan "Düzenle" ve "Sil" butonlarını kullanarak randevuyu düzenleyebilir veya silebiliriz.
+Randevular sekmesine geldiğimizde karşımıza randevularımızın detaylıca gözüktüğü bloklar gelmektedir. Sağ alttaki "+" butonuyla randevu oluşturabilir, önce bayiyi seçerek sonrasında plaka, fiyata göre hizmet türü, saat ve tarih girildikten sonra kolayca randevu oluşturabilirsiniz. Randevuyu ilk oluşturduğunuzda randevu durumu "Beklemede" gözükmektedir. Randevu aldığınız bayi kendi panelinden onaylayıp, reddettikten sonra randevu durumunuz güncellenecektir. Randevuyu altındaki "Düzenle" butonuyla düzenleyebilir, "Sil" butonuyla silebilirsiniz. 
 
 <img width="400"  alt="Randevular Ekranı" src="https://github.com/user-attachments/assets/efb8776f-5be7-4ae7-905a-c7bdd6117bbe" /> <img width="400"  alt="Randevu Olusturma Ekranı" src="https://github.com/user-attachments/assets/b799881c-60a6-449c-a0e8-456b0e39d18a" />
 
 
 #### Profil Kısmı
-Profil kısmına geldiğimizde önümüze basit bir ad-soyad, e-posta ve telefon numarası bilgilerinin görüleceği kısım karşımıza çıkıyor. Sağ üstte başta da dediğimiz gibi "Çıkış Yap" butonu ortaya çıkıyor. Butona basarak çıkış yapabilirsiniz.
+Profil kısmına geldiğimizde önümüze basit bir ad-soyad, e-posta ve telefon numarası bilgilerinin görüleceği kısım karşımıza çıkıyor. En altta "Çıkış Yap" butonu ortaya çıkıyor. Butona basarak çıkış yapabilirsiniz.
 
 <img width="400"  alt="Profil Ekranı" src="https://github.com/user-attachments/assets/ec68c550-4435-4124-922f-f0ddfe7afe7f" />
 
