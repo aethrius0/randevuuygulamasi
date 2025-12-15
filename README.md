@@ -4,11 +4,11 @@ Bu proje, araç yıkama randevu sistemini hem web hem de mobil platformda yönet
 
 ---
 
-## 📋 Proje Tasarım Durumu
+# 📋 Proje Tasarım Durumu
 
-### Frontend
+## Frontend
 
-#### Login-Register Sistemi
+### Login-Register Sistemi
 Uygulamayı başlattığımızda ilk başta karşımıza bir login-register ekranı çıkıyor.
 
 <img width="400"  alt="Login Ekranı" src="https://github.com/user-attachments/assets/b3eec836-a89d-4196-95bf-b3c6d291f550" />
@@ -21,26 +21,26 @@ Kayıt olmak istediğiniz takdirde "Kayıt ol" butonuna basarak ad, soyad, e-pos
 <img width="400"  alt="Register Ekranı" src="https://github.com/user-attachments/assets/1dbd6241-4dac-4eee-85fc-b99b6cb4b25f" />
 
 
-#### Ana Sayfa Kısmı
+### Ana Sayfa Kısmı
 Kayıt olup giriş yaptıktan sonra karşımıza kullanıcı dostu, canlı bir panel geliyor. Tüm bayileri kaydırarak görebiliyor, üstüne tıklayarak çıkan pop-up'ta randevu sekmesine ayrı girmeden seçtiğimiz bayiden randevu alabiliyoruz. 
 Her bayinin puan ve uzaklık göstergesi bulunmaktadır. En alt kısımda da toplam randevu sayınızın ve en yakın randevunuzun detayları birlikte gözüktüğü küçük bir panel bulunmaktadır. 
 
 <img width="400"  alt="Ana Sayfa" src="https://github.com/user-attachments/assets/31a685a8-4271-42fd-8092-804d7c400de3" />
 
 
-#### Randevular Kısmı
+### Randevular Kısmı
 Randevular sekmesine geldiğimizde karşımıza randevularımızın detaylıca gözüktüğü bloklar gelmektedir. Sağ alttaki "+" butonuyla randevu oluşturabilir, önce bayiyi seçerek sonrasında plaka, fiyata göre hizmet türü, saat ve tarih girildikten sonra kolayca randevu oluşturabilirsiniz. Randevuyu ilk oluşturduğunuzda randevu durumu "Beklemede" gözükmektedir. Randevu aldığınız bayi kendi panelinden onaylayıp, reddettikten sonra randevu durumunuz güncellenecektir. Randevuyu altındaki "Düzenle" butonuyla düzenleyebilir, "Sil" butonuyla silebilirsiniz. 
 
 <img width="400"  alt="Randevular Ekranı" src="https://github.com/user-attachments/assets/efb8776f-5be7-4ae7-905a-c7bdd6117bbe" /> <img width="400"  alt="Randevu Olusturma Ekranı" src="https://github.com/user-attachments/assets/b799881c-60a6-449c-a0e8-456b0e39d18a" />
 
 
-#### Profil Kısmı
+### Profil Kısmı
 Profil kısmına geldiğimizde önümüze basit bir ad-soyad, e-posta ve telefon numarası bilgilerinin görüleceği kısım karşımıza çıkıyor. En altta "Çıkış Yap" butonu ortaya çıkıyor. Butona basarak çıkış yapabilirsiniz.
 
 <img width="400"  alt="Profil Ekranı" src="https://github.com/user-attachments/assets/ec68c550-4435-4124-922f-f0ddfe7afe7f" />
 
 
-#### Admin Paneli
+### Admin Paneli
 Admin Paneline normal kullanıcıların girdiği login panelinden giriş yapıyoruz. 
 Giriş yaptıktan sonra karşınıza sizin oto yıkamacınıza özel gelen randevular karşınıza çıkıyor. Bu randevuları onaylayabilir, reddedebilir veya beklemede tutabilirsiniz. Randevuların kime ait olduğu, hangi hizmet türünün istendiğine kadar her detay karşınıza çıkıyor. Üst tarafta bulunan sekmelerden "Bekleyen", "Onaylı", "Red" sekmeleri arasında geçiş yaparak randevuları görebilirsiniz. Sağ üstteki çıkış butonuyla çıkış yapabilir, sol üstteki yenile butonuyla randevuları anlık olarak güncelleyebilirsiniz.
 
@@ -50,9 +50,9 @@ Giriş yaptıktan sonra karşınıza sizin oto yıkamacınıza özel gelen rande
 
 ---
 
-### Backend
+## Backend
 
-#### Login-Register Sistemi
+### Login-Register Sistemi
 Kullanıcı giriş–kayıt işlemleri için ASP.NET Core Web API üzerinde çalışan bir Authentication Controller (AuthController) geliştirilmiştir.
 
 
@@ -63,7 +63,7 @@ public IActionResult Register([FromBody] User user)
 public IActionResult Login([FromBody] LoginRequest request)
 
 
-#### Veritabanı Sistemi
+### Veritabanı Sistemi
 
 Uygulama MySQL veritabanı kullanmaktadır. Sistemde 3 ana tablo bulunmaktadır:
 
@@ -105,7 +105,7 @@ Oto yıkama yöneticilerini saklar.
 
 ---
 
-#### API Sistemi
+### API Sistemi
 Kullanıcı kayıt ve giriş işlemleri REST API üzerinden gerçekleşir. Swagger UI ile bu endpointler kolayca test edilebilmektedir.
 
 #### Flutter – .NET API Bağlantısı
@@ -132,7 +132,7 @@ class ApiService {
 }
 
 
-#### Kullanıcı Modelleri
+### Kullanıcı Modelleri
 Flutter tarafında backend ile uyumlu modeller oluşturulmuştur:
 
 **UserModel**
@@ -145,7 +145,7 @@ class UserModel {
 }
 
 
-#### Swagger UI Sistemi
+### Swagger UI Sistemi
 Backend geliştirirken ve test ortamında kolaylık sağlaması için Swagger UI aktif edilmiştir.
 
 **Özellikler:**
@@ -155,7 +155,7 @@ Backend geliştirirken ve test ortamında kolaylık sağlaması için Swagger UI
 
 <img width="800"  alt="Swagger UI" src="https://github.com/user-attachments/assets/c6c6a92e-0d60-4942-86ff-997c545db323" />
 
-#### Frontend ve API Entegrasyonu
+### Frontend ve API Entegrasyonu
 Web tarafı, backend ile şu şekilde haberleşir:
 
 
