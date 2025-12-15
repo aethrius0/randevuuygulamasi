@@ -11,28 +11,30 @@ Bu proje, araç yıkama randevu sistemini hem web hem de mobil platformda yönet
 #### Login-Register Sistemi
 Uygulamayı başlattığımızda ilk başta karşımıza bir login-register ekranı çıkıyor.
 
-<img width="400" alt="Login Ekranı" src="https://github.com/user-attachments/assets/c83bcda3-65da-48b6-8be5-5f5a0f49ecd4" />
+<img width="400"  alt="Login Ekranı" src="https://github.com/user-attachments/assets/b3eec836-a89d-4196-95bf-b3c6d291f550" />
+
 
 Kayıt olmak istediğiniz takdirde "Kayıt ol" butonuna basarak ad, soyad, e-posta, telefon ve şifrenizi girerek güvenli bir şekilde kaydolabilirsiniz.
 
-<img width="400" alt="Kayıt Ekranı" src="https://github.com/user-attachments/assets/e59fd598-43b1-4385-b21c-4e7a6fde4e23" />
+<img width="400"  alt="Register Ekranı" src="https://github.com/user-attachments/assets/1dbd6241-4dac-4eee-85fc-b99b6cb4b25f" />
+
 
 #### Ana Sayfa Kısmı
 Kayıt olup giriş yaptıktan sonra karşımıza bir Türkiye haritası geliyor. Bu harita üzerinden randevu almak istediğiniz bayiyi seçebilme imkanı sunulur. Alt butonlar sayesinde randevular ve profil sayfanıza geçiş yapabilirsiniz.
 
-<img width="400" alt="Ana Sayfa - Harita" src="https://github.com/user-attachments/assets/3c3686fe-083e-4f08-99d1-c8d8ca84dac7" />
+<img width="400"  alt="Ana Sayfa" src="https://github.com/user-attachments/assets/31a685a8-4271-42fd-8092-804d7c400de3" />
+
 
 #### Randevular Kısmı
 Randevular sekmesine geldiğimizde karşımıza basit bir randevu oluşturma kısmı geliyor. Randevu oluştururken ilk başta araç plakası girilir, devamında arabaya yapılacak hizmetin türü seçilir. Ardından tarih ve saat seçildikten sonra "Randevu Al" butonuna basılır ve randevu başarıyla oluşturulur. Ayrıca oluşturduğumuz randevunun sağında bulunan "Düzenle" ve "Sil" butonlarını kullanarak randevuyu düzenleyebilir veya silebiliriz.
 
-<img width="448" height="895" alt="image" src="https://github.com/user-attachments/assets/2182c2f0-5147-4d24-8439-0761b1e21b04" /> <img width="446" height="898" alt="image" src="https://github.com/user-attachments/assets/0eec14d7-af3f-43f0-8431-dd8fddc6b5b5" />
-
+<img width="400"  alt="Randevular Ekranı" src="https://github.com/user-attachments/assets/efb8776f-5be7-4ae7-905a-c7bdd6117bbe" /> <img width="400"  alt="Randevu Olusturma Ekranı" src="https://github.com/user-attachments/assets/b799881c-60a6-449c-a0e8-456b0e39d18a" />
 
 
 #### Profil Kısmı
 Profil kısmına geldiğimizde önümüze basit bir ad-soyad, e-posta ve telefon numarası bilgilerinin görüleceği kısım karşımıza çıkıyor. Sağ üstte başta da dediğimiz gibi "Çıkış Yap" butonu ortaya çıkıyor. Butona basarak çıkış yapabilirsiniz.
 
-<img width="400" alt="Profil Sayfası" src="https://github.com/user-attachments/assets/e579f8fc-f500-4a03-9153-275e87d6d67a" />
+<img width="400"  alt="Profil Ekranı" src="https://github.com/user-attachments/assets/ec68c550-4435-4124-922f-f0ddfe7afe7f" />
 
 ---
 
