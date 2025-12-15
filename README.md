@@ -14,6 +14,8 @@ Uygulamayı başlattığımızda ilk başta karşımıza bir login-register ekra
 <img width="400"  alt="Login Ekranı" src="https://github.com/user-attachments/assets/b3eec836-a89d-4196-95bf-b3c6d291f550" />
 
 
+
+
 Kayıt olmak istediğiniz takdirde "Kayıt ol" butonuna basarak ad, soyad, e-posta, telefon ve şifrenizi girerek güvenli bir şekilde kaydolabilirsiniz.
 
 <img width="400"  alt="Register Ekranı" src="https://github.com/user-attachments/assets/1dbd6241-4dac-4eee-85fc-b99b6cb4b25f" />
@@ -37,6 +39,15 @@ Profil kısmına geldiğimizde önümüze basit bir ad-soyad, e-posta ve telefon
 
 <img width="400"  alt="Profil Ekranı" src="https://github.com/user-attachments/assets/ec68c550-4435-4124-922f-f0ddfe7afe7f" />
 
+
+#### Admin Paneli
+Admin Paneline normal kullanıcıların girdiği login panelinden giriş yapıyoruz. 
+Giriş yaptıktan sonra karşınıza sizin oto yıkamacınıza özel gelen randevular karşınıza çıkıyor. Bu randevuları onaylayabilir, reddedebilir veya beklemede tutabilirsiniz. Randevuların kime ait olduğu, hangi hizmet türünün istendiğine kadar her detay karşınıza çıkıyor. Üst tarafta bulunan sekmelerden "Bekleyen", "Onaylı", "Red" sekmeleri arasında geçiş yaparak randevuları görebilirsiniz. Sağ üstteki çıkış butonuyla çıkış yapabilir, sol üstteki yenile butonuyla randevuları anlık olarak güncelleyebilirsiniz.
+
+<img width="400"  alt="Admin Paneli" src="https://github.com/user-attachments/assets/24c25a10-4d52-4625-9fd0-5b61164ceead" />
+
+
+
 ---
 
 ### Backend
@@ -53,15 +64,46 @@ public IActionResult Login([FromBody] LoginRequest request)
 
 
 #### Veritabanı Sistemi
-Kimlik doğrulama sistemi için MySQL üzerinde Users tablosu oluşturulmuştur. Her kullanıcı şu alanlarla saklanmaktadır:
+
+Uygulama MySQL veritabanı kullanmaktadır. Sistemde 3 ana tablo bulunmaktadır:
+
+###  Users Tablosu
+Kullanıcı bilgilerini saklar.
 
 | Alan | Açıklama |
 |------|----------|
 | Id | Kullanıcı birincil anahtarı |
 | Name | Ad Soyad |
 | Email | Kullanıcı email adresi |
-| Phone | Telefon |
-| Password | Parola |
+| Phone | Telefon numarası |
+| PasswordHash | Parola |
+
+###  Appointments Tablosu
+Randevu kayıtlarını saklar.
+
+| Alan | Açıklama |
+|------|----------|
+| Id | Randevu birincil anahtarı |
+| CarPlate | Araç plakası |
+| ServiceType | Hizmet türü |
+| AppointmentTime | Randevu tarihi ve saati |
+| CarWashName | Şube adı |
+| Status | Durum (Beklemede, Onaylandı, Reddedildi) |
+| Price | Hizmet fiyatı (₺) |
+| UserId | İlişkili kullanıcı ID  |
+
+###  Admins Tablosu
+Oto yıkama yöneticilerini saklar.
+
+| Alan | Açıklama |
+|------|----------|
+| Id | Admin birincil anahtarı |
+| Name | Yönetici adı |
+| Email | Email adresi |
+| PasswordHash | Parola |
+| BranchName | Yönettiği bayi adı |
+
+---
 
 #### API Sistemi
 Kullanıcı kayıt ve giriş işlemleri REST API üzerinden gerçekleşir. Swagger UI ile bu endpointler kolayca test edilebilmektedir.
@@ -111,7 +153,7 @@ Backend geliştirirken ve test ortamında kolaylık sağlaması için Swagger UI
 - Request–Response gövdesi canlı gösterilir
 - API çağrıları direkt tarayıcıdan test edilir
 
-<img width="800" alt="Swagger UI" src="https://github.com/user-attachments/assets/efbc69e7-4438-485e-9027-92ef07f66857" />
+<img width="800"  alt="Swagger UI" src="https://github.com/user-attachments/assets/c6c6a92e-0d60-4942-86ff-997c545db323" />
 
 #### Frontend ve API Entegrasyonu
 Web tarafı, backend ile şu şekilde haberleşir:
